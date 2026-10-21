@@ -38,7 +38,7 @@ int main()
         {
             cout << "*";
 
-            for (int i = 0; i < spaceInBetweenCount; i++)
+            for (int k = 0; k < spaceInBetweenCount; k++)
             {
                 cout << " ";
             }
@@ -84,7 +84,7 @@ int main()
         {
             cout << "*";
 
-            for (int i = 0; i < spaceInBetweenCount; i++)
+            for (int k = 0; k < spaceInBetweenCount; k++)
             {
                 cout << " ";
             }

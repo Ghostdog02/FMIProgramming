@@ -39,7 +39,7 @@ int main()
         starsCount += 2;
     }
 
-    for (int i = 0; i < starsCount; i++)
+    for (int k = 0; k < starsCount; k++)
     {
         cout << "*";
     }
