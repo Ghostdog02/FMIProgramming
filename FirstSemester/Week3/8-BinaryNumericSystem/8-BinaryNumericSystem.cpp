@@ -4,7 +4,6 @@ using namespace std;
 
 long long binaryToDecimal(long long number);
 long long decimalToBinary(long long number);
-long long calculatePowerOf2(int power);
 long long raiseToNPower(int steps, int power);
 
 int main()
@@ -19,14 +18,15 @@ int main()
         case 'b':
             cout << decimalToBinary(number) << endl;
             break;
-        
         case 'd':
             cout << binaryToDecimal(number) << endl;
             break;
-
         default:
+            cout << "Invalid numeric system specifier.\n";
             break;
     }
+
+    return 0;
 }
 
 long long binaryToDecimal(long long number)
@@ -52,7 +52,7 @@ long long decimalToBinary(long long number)
 
     while (number > 0)
     {
-        result += ((number % 10) % 2) * place;
+        result += (number % 2) * place;
         number /= 2;
         place *= 10;
     }

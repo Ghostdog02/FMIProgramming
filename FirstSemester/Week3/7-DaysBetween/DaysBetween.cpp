@@ -21,12 +21,10 @@ int dayOfYear(int dayDate, int month, int year)
                 day++;
             }
         }
-
         else if (is31Days(i))
         {
             day += 31;
         }
-
         else
         {
             day += 30;
@@ -46,34 +44,11 @@ bool isLeapYear(int year)
     return (year % 4 == 0 && year % 100 != 0) || year % 400 == 0;
 }
 
-int convertYearsToDays(int startYear, int endYear);
-
-int convertYearsToDays(int startYear, int endYear)
-{
-    int days = 0;
-
-    for (int i = startYear; i < endYear; i++)
-    {
-        if (isLeapYear(i))
-        {
-            days += 366;
-        }
-
-        else
-        {
-            days += 365;
-        }
-    }
-    
-    return days;
-}
-
 int main() 
 {
     int startDay = 0;
     int startMonth = 0;
     int startYear = 0;
-
     int endDay = 0;
     int endMonth = 0;
     int endYear = 0;
@@ -89,4 +64,6 @@ int main()
     }
     
     cout << difference;
+
+    return 0;
 }
